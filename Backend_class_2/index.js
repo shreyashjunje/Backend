@@ -11,10 +11,12 @@ app.use(express.json());
 
 //import routes for todo api
 const todoRoutes=require("./routes/todos");
+// const getTodos=require("./routes/todos");
 const dbConnect = require('./config/database');
 
 //mount todo api routes 
 app.use("/api/v1",todoRoutes);
+// app.use("/api/v1/getTodos",getTodos)
 
 app.listen(PORT,()=>{
     console.log(`server started at ${PORT}`)
