@@ -14,7 +14,7 @@ connectWithDB();
 
 
 app.listen(PORT,(req,res)=>{
-    console.log("App started successfully");
+    console.log(`App is listening at ${port}`);
     
 })
 
